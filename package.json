@@ -2,7 +2,6 @@
   "name": "responsivesass",
   "version": "1.0.0",
   "main": "index.js",
-
   "scripts": {
     "start": "sass sass/main.scss css/main.css"
   },
@@ -12,7 +11,13 @@
     "node-sass": "^6.0.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihyanik/TurkishCuisine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatihyanik/TurkishCuisine/issues"
+  },
+  "homepage": "https://github.com/fatihyanik/TurkishCuisine#readme",
   "description": ""
 }
-
-
