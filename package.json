@@ -1,7 +1,6 @@
 {
   "name": "turkishcuisine",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node-sass sass/main.scss css/main.css -w"
@@ -10,5 +9,19 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihyanik/TurkishCuisine.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/fatihyanik/TurkishCuisine/issues"
+  },
+  "homepage": "https://github.com/fatihyanik/TurkishCuisine#readme",
+  "description": ""
 }

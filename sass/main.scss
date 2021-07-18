@@ -1,5 +1,168 @@
-$degisken: white;
+$degisken-adi:blue;
+.container{
+    color: $degisken-adi;
+}/*media screen and (min-width:800px)*/
 
-body{
-    background-color: $degisken;
+@media screen and (min-width:800px) {
+    h1 {
+        font-size: $h1-font-size + 1;
+    }
+
+    h2 {
+        font-size: $h2-font-size + 0.5;
+    }
+
+    h3 {
+        font-size: $h3-font-size + 0.25;
+    }
+
+    body,
+    h4 {
+        font-size: $h4-font-size;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: $h-line-height - 0.25;
+    }
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+/*Media screen*/
+@media screen and (min-width:992px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+.menu {
+    padding: 5rem 0;
+}
+
+/*Header Starts*/
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.border__bottom {
+    width: 12rem;
+    height: .25rem;
+    background: $color-secondary;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Navbar Starts*/
+.navbar {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+    li {
+        font-size: 1rem;
+        margin: 0 .5rem;
+        letter-spacing: 1px;
+        padding: .375rem .75rem;
+        cursor: pointer;
+        transition: all .3s linear;
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+
+            &:hover {
+                background: $color-secondary;
+                color: $bg-color;
+            }
+        }
+    }
+}
+
+
+/*Section Food Starts*/
+
+.section-food {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-gap: 3rem 2rem;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+
+.food-item {
+    display: grid;
+    grid-gap: 1rem 2rem;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+}
+
+.img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border: .25rem solid $color-secondary;
+    border-radius: .25rem;
+    display: block;
+}
+
+.food-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px dotted $color-secondary;
+}
+
+.food-info h4 {
+    margin-bottom: .5rem;
+}
+
+.price {
+    color: $color-secondary;
+}
+
+.food-text {
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+
+
+/*media screen (min-width:1200px) starts*/
+@media screen and (min-width:1200px) {
+    .section-food {
+        width: 95vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img {
+        height: 150px;
+    }
+}
+
+/*media screen (min-width:768px) starts*/
+@media screen and (min-width:768px) {
+    .food-item {
+        grid-template-columns: 225px 1fr;
+        grid-gap: 0 1.25rem;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+    }
+
+    .img {
+        height: 175px;
+    }
 }
